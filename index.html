@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Corrupted Letters</title>
+    <style>
+        body {
+            margin: 36px;
+        }
+        h1 {
+            text-align: center;
+        }
+        #result {
+            width: 100%;
+            min-height: 200px;
+            white-space: pre-wrap;       /* Since CSS 2.1 */
+            white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+            white-space: -pre-wrap;      /* Opera 4-6 */
+            white-space: -o-pre-wrap;    /* Opera 7 */
+            word-wrap: break-word;       /* Internet Explorer 5.5+ */
+        }
+        #text {
+            width: 100%;
+            min-height: 200px;
+            resize: vertical;
+        }
+        label {
+            margin-top: 1rem;
+            display: block;
+            font-size: 1rem;
+        }
+
+    </style>
+    <script type="application/javascript" src="corruption.js"></script>
+</head>
+<body>
+<h1>Corrupted Letters</h1>
+<pre id="result"></pre>
+<hr>
+<textarea id="text" placeholder="Write text to render as corrupted...">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ante leo, ornare vitae dictum vel, ultrices sed orci. Curabitur vitae aliquam libero. Integer congue lorem et sapien accumsan, nec blandit justo mollis. Maecenas at justo libero. Duis consequat metus ac sagittis ornare. Curabitur tincidunt vestibulum odio varius dignissim. In sed egestas neque, vel suscipit ligula. Aliquam odio quam, dapibus nec ex nec, egestas tempus dui. Nunc in condimentum diam.
+
+Proin ante arcu, pellentesque sollicitudin sem eu, blandit egestas quam. Suspendisse tristique felis sed libero consectetur, non commodo neque bibendum. Vivamus maximus orci nec tincidunt congue. Nam eu efficitur magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nam hendrerit luctus diam non iaculis. Mauris ultrices condimentum dolor, eu auctor tellus. Pellentesque at posuere elit. Cras quis auctor turpis. Pellentesque convallis rutrum lacus, id auctor neque egestas vitae. Morbi massa ligula, maximus vitae interdum a, ultricies euismod mauris. Maecenas eget est ut quam aliquet dictum. Cras luctus lorem vel diam fermentum dictum. Praesent vehicula elementum neque imperdiet fermentum. Maecenas tempor iaculis venenatis</textarea>
+<div>
+    <label for="corruption">Corruption</label>
+    <input id="corruption" type="range" min="0" max="100" value="10">
+    <label for="speed">Animation Speed</label>
+    <input id="speed" type="range" min="1" max="60" value="15">
+</div>
+</body>
+</html>
